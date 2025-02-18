@@ -50,17 +50,27 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-
-
   const leftLists = ["ReactJS", "Express", "Typescript"];
   const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
 
   const [copied, setCopied] = useState(false);
 
+  const defaultOptions = {
+    loop: copied,
+    autoplay: copied,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
   const handleCopy = () => {
-    navigator.clipboard.writeText('emailjonathan@gmail.com');
-    setCopied
-  }
+    const text = "hsu@jsmastery.pro";
+    navigator.clipboard.writeText(text);
+    setCopied(true);
+  };
+
+
 
   return (
     <div
@@ -153,15 +163,9 @@ export const BentoGridItem = ({
 
           {id === 6 && (
             <div className="mt-5 relative ">
-              <div className="{`absolute -bottom-5 right-0">
-                <Lottie options={{
-                  loop: copied,
-                  autoplay: copied,
-                  animationData,
-                  rendererSettings: {
-                    preserveAspectRatio: 'xMidYMid slice',
-                  }
-                }} />
+              <div
+                className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"}`}>
+                <Lottie options={defaultOptions} height={200} width={400} />
               </div>
 
               <MagicButton
