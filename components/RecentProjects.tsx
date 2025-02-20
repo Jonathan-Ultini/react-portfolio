@@ -7,8 +7,8 @@ const RecentProjects = () => {
   return (
     <section className='py-20' id='projects'>
       <h1 className='heading'>
-        a small selection of {''}
-        <span className='text-purple'>recent projects</span>
+        Una selezione di {''}
+        <span className='text-purple'>progetti recenti</span>
       </h1>
       <div className='flex flex-wrap items-center justify-center p-4 gap-16 mt-10'>
         {projects.map(({ id, title, des, img, iconLists, link }) => (
@@ -40,7 +40,7 @@ const RecentProjects = () => {
 
                 <div className='flex justify-center items-center'>
                   <p className='flex lg:text-xl md:text-xs text-sm text-purple'>
-                    check live site
+                    controlla il sito live
                   </p>
                   <FaLocationArrow className='ms-3' color='#CBACF9' />
                 </div>
