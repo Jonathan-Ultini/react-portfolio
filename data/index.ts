@@ -81,7 +81,7 @@ export const projects = [
    {
      id: 2,
      title: "Ricerca video",
-     des: "Sito per la ricerca di film e serie con tendenza.",
+     des: "La piattaforma offre un'esperienza elegante e moderna per sfogliare e scoprire film.",
      img: "/project2.png",
      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/app.svg", "/re.svg"],
      link: "https://github.com/Jonathan-Ultini/react-movie",
