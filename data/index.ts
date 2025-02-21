@@ -208,8 +208,13 @@ export const socialMedia = [
     link: "https://github.com/Jonathan-Ultini"
   },
   {
-    id: 3,
+    id: 2,
     img: "/link.svg",
     link: "https://www.linkedin.com/in/jonathan-ultini"
+  },
+  {
+    id: 3,
+    img: "/cv.svg",
+    download: "/files/JonathanUltiniCV.pdf"
   },
 ];
