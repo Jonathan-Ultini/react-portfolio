@@ -84,7 +84,7 @@ export const projects = [
      des: "La piattaforma offre un'esperienza elegante e moderna per sfogliare e scoprire film.",
      img: "/project2.png",
      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/app.svg", "/re.svg"],
-     link: "https://github.com/Jonathan-Ultini/react-movie",
+     link: "/projects/movies",
    },
   // {
   //   id: 3,
