@@ -1,38 +1,48 @@
-"use client";
+"use client"; // Indica che questo componente React è un client component (specifico di Next.js)
 
 import React from "react";
 
+// Importa i dati delle aziende e delle testimonianze
 import { companies, testimonials } from "@/data";
+
+// Importa il componente per le card a scorrimento infinito
 import { InfiniteMovingCards } from "./ui/InfiniteCards";
 
 const Clients = () => {
   return (
     <section id="testimonials" className="py-20">
+      {/* Titolo della sezione */}
       <h1 className="heading">
         Kind words from
         <span className="text-purple"> satisfied clients</span>
       </h1>
 
       <div className="flex flex-col items-center max-lg:mt-10">
+        {/* Contenitore delle testimonianze con effetto di scorrimento */}
         <div
-          className="h-[50vh] md:h-[30rem] rounded-md flex flex-col antialiased  items-center justify-center relative overflow-hidden"
+          className="h-[50vh] md:h-[30rem] rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden"
         >
+          {/* Componente che mostra le testimonianze con scorrimento infinito */}
           <InfiniteMovingCards
-            items={testimonials}
-            direction="right"
-            speed="slow"
+            items={testimonials} // Lista delle testimonianze da visualizzare
+            direction="right" // Direzione dello scorrimento (verso destra)
+            speed="slow" // Velocità dello scorrimento
           />
         </div>
 
+        {/* Contenitore dei loghi delle aziende clienti */}
         <div className="flex flex-wrap items-center justify-center gap-4 md:gap-16 max-lg:mt-10">
+          {/* Ciclo sui dati delle aziende per mostrare i loghi */}
           {companies.map((company) => (
             <React.Fragment key={company.id}>
               <div className="flex md:max-w-60 max-w-32 gap-2">
+                {/* Logo dell'azienda */}
                 <img
                   src={company.img}
                   alt={company.name}
                   className="md:w-10 w-5"
                 />
+                {/* Nome dell'azienda con dimensioni condizionali */}
                 <img
                   src={company.nameImg}
                   alt={company.name}
