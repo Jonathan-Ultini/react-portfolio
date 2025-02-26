@@ -45,7 +45,7 @@ const Hero = () => {
           {/* Testo principale con effetto animato di generazione */}
           <TextGenerateEffect
             className='text-center text-[40px] md:text-5xl lg:text-6xl'
-            words='Inizio il mio percorso nello sviluppo web creando esperienze utente fluide e accessibili.'
+            words='Sviluppo soluzioni web con focus su esperienze utente fluide e accessibili'
           />
 
           {/* Breve descrizione dell'autore */}
