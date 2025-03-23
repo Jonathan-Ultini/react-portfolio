@@ -78,7 +78,7 @@ export const projects = [
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/next.svg"],
     link: "https://github.com/Jonathan-Ultini/react-portfolio",
   },
-   {
+  {
      id: 2,
      title: "Ricerca video",
      des: "La piattaforma offre un'esperienza elegante e moderna per sfogliare e scoprire film.",
@@ -86,22 +86,14 @@ export const projects = [
      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/app.svg", "/re.svg"],
      link: "/projects/movies",
    },
-  // {
-  //   id: 3,
-  //   title: "AI Image SaaS - Canva Application",
-  //   des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-  //   img: "/p3.svg",
-  //   iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-  //   link: "https://github.com/adrianhajdin/ai_saas_app",
-  // },
-  // {
-  //   id: 4,
-  //   title: "Animated Apple Iphone 3D Website",
-  //   des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-  //   img: "/p4.svg",
-  //   iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-  //   link: "https://github.com/adrianhajdin/iphone",
-  // },
+   {
+    id: 3,
+    title: "Tracker sottoscrizioni",
+    des: "Un'applicazione per gestire e monitorare le sottoscrizioni, con autenticazione sicura.",
+    img: "/dashboard-tracker.png",
+    iconLists: ["/next.svg", "/upstash.png", "/ts.svg", "/re.svg", "/express.png", "/mongodb.svg", "/nodemailer.webp"],
+    link: "https://github.com/Jonathan-Ultini/subscription-tracker",
+  },
 ];
 
 export const testimonials = [

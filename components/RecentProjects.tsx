@@ -60,8 +60,8 @@ const RecentProjects = () => {
                   {/* Link per visualizzare il codice o il sito live */}
                   <div className='flex justify-center items-center'>
                     <p className='flex lg:text-xl md:text-xs text-sm text-purple'>
-                      {id === 1 ? "controlla il codice" : "controlla il sito live"}
-                      {/* Se l'ID del progetto è 1, mostra "controlla il codice", altrimenti "controlla il sito live" */}
+                      {id === 2 ? "controlla il sito live" : "controlla il codice"}
+                      {/* da cambiare in base ai progetti che verranno messi */}
                     </p>
                     <FaLocationArrow className='ms-3' color='#CBACF9' /> {/* Icona della freccia */}
                   </div>
