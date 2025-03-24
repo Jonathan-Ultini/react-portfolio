@@ -90,7 +90,7 @@ export const projects = [
     id: 3,
     title: "Tracker sottoscrizioni",
     des: "Un'applicazione per gestire e monitorare le sottoscrizioni, con autenticazione sicura.",
-    img: "/dashboard-tracker.png",
+    img: "/subscription-tracker.png",
     iconLists: ["/next.svg", "/upstash.png", "/ts.svg", "/re.svg", "/express.png", "/mongodb.svg", "/nodemailer.webp"],
     link: "https://github.com/Jonathan-Ultini/subscription-tracker",
   },
